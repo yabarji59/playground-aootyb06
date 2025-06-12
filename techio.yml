@@ -1,10 +1,19 @@
-title: Node.js Project
+title: Bases du JavaScript
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
-projects:
-  nodejs:
-    root: /nodejs-project
-    runner:
-      name: techio/node-npm-runner
-      version: latest
+  - title: Introduction
+    statement: introduction.md
+  - title: Variables
+    statement: variables/statement.md
+    code: variables/solution.js
+  - title: Tableaux
+    statement: tableaux/statement.md
+    code: tableaux/solution.js
+  - title: Conditions
+    statement: conditions/statement.md
+    code: conditions/solution.js
+  - title: Boucles
+    statement: boucles/statement.md
+    code: boucles/solution.js
+  - title: Fonctions
+    statement: fonctions/statement.md
+    code: fonctions/solution.js
