@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Playground</title>
+    <title>JavaScript IDE</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Monaco Editor -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/loader.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="ide-container">
         <div class="editor-container">
+            <div class="editor-header">
+                <h2>Éditeur de Code</h2>
+                <div class="editor-controls">
+                    <button id="run-btn">Exécuter</button>
+                    <button id="reset-btn">Réinitialiser</button>
+                </div>
+            </div>
             <div id="editor"></div>
         </div>
-        <div class="console-container">
-            <div class="console-header">
-                <span>Console</span>
-                <button id="run-btn">Exécuter</button>
+        <div class="output-container">
+            <div class="output-header">
+                <h2>Console</h2>
                 <button id="clear-btn">Effacer</button>
             </div>
-            <div id="console"></div>
+            <div id="output"></div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
     <script src="ide.js"></script>
 </body>
 </html> 

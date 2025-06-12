@@ -5,12 +5,14 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1e1e1e;
-    color: #fff;
+    color: #d4d4d4;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.container {
+.ide-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -18,66 +20,91 @@ body {
     gap: 20px;
 }
 
-.editor-container {
-    flex: 1;
-    min-height: 60vh;
-    border: 1px solid #333;
-    border-radius: 4px;
-}
-
-.console-container {
-    height: 30vh;
+.editor-container, .output-container {
     background-color: #252526;
-    border: 1px solid #333;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.console-header {
-    padding: 10px;
-    background-color: #333;
-    border-bottom: 1px solid #444;
+.editor-header, .output-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #333333;
+    border-radius: 8px 8px 0 0;
+}
+
+.editor-controls {
+    display: flex;
     gap: 10px;
 }
 
-.console-header button {
-    padding: 5px 10px;
+button {
+    padding: 8px 16px;
     background-color: #0e639c;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    transition: background-color 0.2s;
 }
 
-.console-header button:hover {
+button:hover {
     background-color: #1177bb;
 }
 
-#console {
-    flex: 1;
-    padding: 10px;
+#editor {
+    height: 60vh;
+    border-radius: 0 0 8px 8px;
+}
+
+#output {
+    height: 30vh;
+    padding: 20px;
+    font-family: 'Consolas', 'Courier New', monospace;
     overflow-y: auto;
-    font-family: 'Consolas', 'Monaco', monospace;
+    white-space: pre-wrap;
+    background-color: #1e1e1e;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Styles pour les messages de la console */
+.log {
+    color: #d4d4d4;
+}
+
+.error {
+    color: #f48771;
+}
+
+.warn {
+    color: #cca700;
+}
+
+.info {
+    color: #75beff;
+}
+
+/* Styles pour l'éditeur Ace */
+.ace_editor {
+    font-family: 'Consolas', 'Courier New', monospace;
     font-size: 14px;
     line-height: 1.5;
 }
 
-#console .log {
-    color: #d4d4d4;
-}
+/* Responsive design */
+@media (max-width: 768px) {
+    .ide-container {
+        padding: 10px;
+    }
 
-#console .error {
-    color: #f48771;
-}
+    #editor {
+        height: 50vh;
+    }
 
-#console .warn {
-    color: #cca700;
-}
-
-#console .info {
-    color: #75beff;
+    #output {
+        height: 40vh;
+    }
 } 

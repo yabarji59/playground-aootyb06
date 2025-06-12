@@ -3,58 +3,61 @@ description: Un environnement interactif pour apprendre JavaScript
 plan:
   - title: Introduction à JavaScript
     statement: introduction.md
-    solution: introduction.js
-    validation: introduction.test.js
+    code: introduction.js
+    test: introduction.test.js
 
   - title: Les Variables
     statement: variables/statement.md
-    solution: variables/solution.js
-    validation: variables/grader.js
+    code: variables/solution.js
+    test: variables/grader.js
     quiz: quiz/variables-quiz.md
 
   - title: Les Tableaux
     statement: tableaux/statement.md
-    solution: tableaux/solution.js
-    validation: tableaux/grader.js
+    code: tableaux/solution.js
+    test: tableaux/grader.js
     quiz: quiz/tableaux-quiz.md
 
   - title: Les Conditions
     statement: conditions/statement.md
-    solution: conditions/solution.js
-    validation: conditions/grader.js
+    code: conditions/solution.js
+    test: conditions/grader.js
     quiz: quiz/conditions-quiz.md
 
   - title: Les Boucles
     statement: boucles/statement.md
-    solution: boucles/solution.js
-    validation: boucles/grader.js
+    code: boucles/solution.js
+    test: boucles/grader.js
     quiz: quiz/boucles-quiz.md
 
   - title: Les Fonctions
     statement: fonctions/statement.md
-    solution: fonctions/solution.js
-    validation: fonctions/grader.js
+    code: fonctions/solution.js
+    test: fonctions/grader.js
     quiz: quiz/fonctions-quiz.md
 
   - title: Projet Todo App
     statement: exercices-complexes/todo-app.md
-    solution: exercices-complexes/todo-app.js
-    validation: exercices-complexes/todo-app.test.js
+    code: exercices-complexes/todo-app.js
+    test: exercices-complexes/todo-app.test.js
 
   - title: Projet Calculatrice
     statement: exercices-complexes/calculatrice.md
-    solution: exercices-complexes/calculatrice.js
-    validation: exercices-complexes/calculatrice.test.js
+    code: exercices-complexes/calculatrice.js
+    test: exercices-complexes/calculatrice.test.js
 
   - title: Projet Memory Game
     statement: exercices-complexes/memory-game.md
-    solution: exercices-complexes/memory-game.js
-    validation: exercices-complexes/memory-game.test.js
+    code: exercices-complexes/memory-game.js
+    test: exercices-complexes/memory-game.test.js
 
   - title: Configuration de l'IDE
-    statement: ide/ide.md
-    solution: ide/ide.js
-    validation: ide/ide.test.js
+    statement: ide/index.html
+    type: web
+    files:
+      - ide/index.html
+      - ide/styles.css
+      - ide/ide.js
 
   - title: Progression
     statement: progress/progress.js
