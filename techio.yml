@@ -3,58 +3,58 @@ description: Un environnement interactif pour apprendre JavaScript
 plan:
   - title: Introduction à JavaScript
     statement: introduction.md
-    code: introduction.js
-    test: introduction.test.js
+    solution: introduction.js
+    validation: introduction.test.js
 
   - title: Les Variables
-    statement: variables/variables.md
-    code: variables/variables.js
-    test: variables/variables.test.js
+    statement: variables/statement.md
+    solution: variables/solution.js
+    validation: variables/grader.js
     quiz: quiz/variables-quiz.md
 
   - title: Les Tableaux
-    statement: tableaux/tableaux.md
-    code: tableaux/tableaux.js
-    test: tableaux/tableaux.test.js
+    statement: tableaux/statement.md
+    solution: tableaux/solution.js
+    validation: tableaux/grader.js
     quiz: quiz/tableaux-quiz.md
 
   - title: Les Conditions
-    statement: conditions/conditions.md
-    code: conditions/conditions.js
-    test: conditions/conditions.test.js
+    statement: conditions/statement.md
+    solution: conditions/solution.js
+    validation: conditions/grader.js
     quiz: quiz/conditions-quiz.md
 
   - title: Les Boucles
-    statement: boucles/boucles.md
-    code: boucles/boucles.js
-    test: boucles/boucles.test.js
+    statement: boucles/statement.md
+    solution: boucles/solution.js
+    validation: boucles/grader.js
     quiz: quiz/boucles-quiz.md
 
   - title: Les Fonctions
-    statement: fonctions/fonctions.md
-    code: fonctions/fonctions.js
-    test: fonctions/fonctions.test.js
+    statement: fonctions/statement.md
+    solution: fonctions/solution.js
+    validation: fonctions/grader.js
     quiz: quiz/fonctions-quiz.md
 
   - title: Projet Todo App
     statement: exercices-complexes/todo-app.md
-    code: exercices-complexes/todo-app.js
-    test: exercices-complexes/todo-app.test.js
+    solution: exercices-complexes/todo-app.js
+    validation: exercices-complexes/todo-app.test.js
 
   - title: Projet Calculatrice
     statement: exercices-complexes/calculatrice.md
-    code: exercices-complexes/calculatrice.js
-    test: exercices-complexes/calculatrice.test.js
+    solution: exercices-complexes/calculatrice.js
+    validation: exercices-complexes/calculatrice.test.js
 
   - title: Projet Memory Game
     statement: exercices-complexes/memory-game.md
-    code: exercices-complexes/memory-game.js
-    test: exercices-complexes/memory-game.test.js
+    solution: exercices-complexes/memory-game.js
+    validation: exercices-complexes/memory-game.test.js
 
   - title: Configuration de l'IDE
     statement: ide/ide.md
-    code: ide/ide.js
-    test: ide/ide.test.js
+    solution: ide/ide.js
+    validation: ide/ide.test.js
 
   - title: Progression
     statement: progress/progress.js
