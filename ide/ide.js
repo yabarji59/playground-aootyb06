@@ -90,6 +90,108 @@ editor.setOptions({
     enableSnippets: true
 });
 
+// Configuration des snippets
+const snippets = [
+    {
+        name: "variable",
+        content: "let ${1:nom} = ${2:valeur};",
+        caption: "Déclarer une variable",
+        meta: "Snippet"
+    },
+    {
+        name: "constante",
+        content: "const ${1:NOM} = ${2:valeur};",
+        caption: "Déclarer une constante",
+        meta: "Snippet"
+    },
+    {
+        name: "fonction",
+        content: "function ${1:nomFonction}(${2:parametres}) {\n\t${3:// code}\n}",
+        caption: "Déclarer une fonction",
+        meta: "Snippet"
+    },
+    {
+        name: "fonction-fléchée",
+        content: "const ${1:nomFonction} = (${2:parametres}) => {\n\t${3:// code}\n};",
+        caption: "Déclarer une fonction fléchée",
+        meta: "Snippet"
+    },
+    {
+        name: "if",
+        content: "if (${1:condition}) {\n\t${2:// code}\n}",
+        caption: "Structure conditionnelle if",
+        meta: "Snippet"
+    },
+    {
+        name: "if-else",
+        content: "if (${1:condition}) {\n\t${2:// code}\n} else {\n\t${3:// code}\n}",
+        caption: "Structure conditionnelle if-else",
+        meta: "Snippet"
+    },
+    {
+        name: "for",
+        content: "for (let ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {\n\t${3:// code}\n}",
+        caption: "Boucle for classique",
+        meta: "Snippet"
+    },
+    {
+        name: "for-of",
+        content: "for (const ${1:element} of ${2:array}) {\n\t${3:// code}\n}",
+        caption: "Boucle for...of",
+        meta: "Snippet"
+    },
+    {
+        name: "while",
+        content: "while (${1:condition}) {\n\t${2:// code}\n}",
+        caption: "Boucle while",
+        meta: "Snippet"
+    },
+    {
+        name: "console",
+        content: "console.log(${1:message});",
+        caption: "Afficher dans la console",
+        meta: "Snippet"
+    },
+    {
+        name: "tableau",
+        content: "const ${1:nom} = [${2:element1}, ${3:element2}];",
+        caption: "Créer un tableau",
+        meta: "Snippet"
+    },
+    {
+        name: "objet",
+        content: "const ${1:nom} = {\n\t${2:propriete}: ${3:valeur}\n};",
+        caption: "Créer un objet",
+        meta: "Snippet"
+    },
+    {
+        name: "try-catch",
+        content: "try {\n\t${1:// code}\n} catch (error) {\n\tconsole.error(error);\n}",
+        caption: "Bloc try-catch",
+        meta: "Snippet"
+    },
+    {
+        name: "async",
+        content: "async function ${1:nomFonction}() {\n\ttry {\n\t\t${2:// code}\n\t} catch (error) {\n\t\tconsole.error(error);\n\t}\n}",
+        caption: "Fonction asynchrone",
+        meta: "Snippet"
+    },
+    {
+        name: "promise",
+        content: "new Promise((resolve, reject) => {\n\t${1:// code}\n});",
+        caption: "Créer une Promise",
+        meta: "Snippet"
+    }
+];
+
+// Ajouter les snippets à l'éditeur
+const langTools = ace.require("ace/ext/language_tools");
+const snippetManager = ace.require("ace/snippets").snippetManager;
+
+snippets.forEach(snippet => {
+    snippetManager.register(snippet, "javascript");
+});
+
 // Éléments DOM
 const runBtn = document.getElementById("run-btn");
 const resetBtn = document.getElementById("reset-btn");
@@ -98,6 +200,9 @@ const output = document.getElementById("output");
 
 // Code initial
 const initialCode = `// Écrivez votre code JavaScript ici
+// Utilisez les snippets pour vous aider :
+// Tapez "fonction" ou "if" et appuyez sur Tab
+
 console.log("Bonjour, JavaScript !");
 
 // Exemple de fonction
