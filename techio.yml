@@ -2,18 +2,28 @@ title: Bases du JavaScript
 plan:
   - title: Introduction
     statement: introduction.md
+
   - title: Variables
     statement: variables/statement.md
     code: variables/solution.js
+    test: variables/grader.js
+
   - title: Tableaux
     statement: tableaux/statement.md
     code: tableaux/solution.js
+    test: tableaux/grader.js
+
   - title: Conditions
     statement: conditions/statement.md
     code: conditions/solution.js
+    test: conditions/grader.js
+
   - title: Boucles
     statement: boucles/statement.md
     code: boucles/solution.js
+    test: boucles/grader.js
+
   - title: Fonctions
     statement: fonctions/statement.md
     code: fonctions/solution.js
+    test: fonctions/grader.js
