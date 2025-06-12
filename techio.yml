@@ -1,29 +1,68 @@
-title: Bases du JavaScript
+title: JavaScript Playground
+description: Un environnement interactif pour apprendre JavaScript
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png
 plan:
-  - title: Introduction
-    statement: introduction.md
+  - title: Introduction à JavaScript
+    statement: introduction/introduction.md
+    code: introduction/introduction.js
+    test: introduction/introduction.test.js
 
-  - title: Variables
-    statement: variables/statement.md
-    code: variables/solution.js
-    test: variables/grader.js
+  - title: Les Variables
+    statement: variables/variables.md
+    code: variables/variables.js
+    test: variables/variables.test.js
+    quiz: quiz/variables-quiz.md
 
-  - title: Tableaux
-    statement: tableaux/statement.md
-    code: tableaux/solution.js
-    test: tableaux/grader.js
+  - title: Les Tableaux
+    statement: tableaux/tableaux.md
+    code: tableaux/tableaux.js
+    test: tableaux/tableaux.test.js
+    quiz: quiz/tableaux-quiz.md
 
-  - title: Conditions
-    statement: conditions/statement.md
-    code: conditions/solution.js
-    test: conditions/grader.js
+  - title: Les Conditions
+    statement: conditions/conditions.md
+    code: conditions/conditions.js
+    test: conditions/conditions.test.js
+    quiz: quiz/conditions-quiz.md
 
-  - title: Boucles
-    statement: boucles/statement.md
-    code: boucles/solution.js
-    test: boucles/grader.js
+  - title: Les Boucles
+    statement: boucles/boucles.md
+    code: boucles/boucles.js
+    test: boucles/boucles.test.js
+    quiz: quiz/boucles-quiz.md
 
-  - title: Fonctions
-    statement: fonctions/statement.md
-    code: fonctions/solution.js
-    test: fonctions/grader.js
+  - title: Les Fonctions
+    statement: fonctions/fonctions.md
+    code: fonctions/fonctions.js
+    test: fonctions/fonctions.test.js
+    quiz: quiz/fonctions-quiz.md
+
+  - title: Projet Todo App
+    statement: exercices-complexes/todo-app.md
+    code: exercices-complexes/todo-app.js
+    test: exercices-complexes/todo-app.test.js
+
+  - title: Projet Calculatrice
+    statement: exercices-complexes/calculatrice.md
+    code: exercices-complexes/calculatrice.js
+    test: exercices-complexes/calculatrice.test.js
+
+  - title: Projet Memory Game
+    statement: exercices-complexes/memory-game.md
+    code: exercices-complexes/memory-game.js
+    test: exercices-complexes/memory-game.test.js
+
+  - title: Configuration de l'IDE
+    statement: ide/ide.md
+    code: ide/ide.js
+    test: ide/ide.test.js
+
+  - title: Progression
+    statement: progress/progress.js
+    type: web
+    files:
+      - progress/progress.js
+      - progress/badges.json
+      - progress/notifications.js
+      - progress/leaderboard.js
+      - progress/comments.js

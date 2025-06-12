@@ -1,0 +1,107 @@
+{
+  "badges": [
+    {
+      "id": "beginner",
+      "name": "Débutant",
+      "description": "Compléter le premier exercice",
+      "icon": "🌟",
+      "condition": "complete_exercise",
+      "exercise": "variables"
+    },
+    {
+      "id": "array_master",
+      "name": "Maître des Tableaux",
+      "description": "Obtenir 100% au quiz sur les tableaux",
+      "icon": "📊",
+      "condition": "quiz_score",
+      "quiz": "tableaux-quiz",
+      "score": 100
+    },
+    {
+      "id": "logic_expert",
+      "name": "Expert en Logique",
+      "description": "Compléter tous les exercices de conditions",
+      "icon": "🧠",
+      "condition": "complete_all_exercises",
+      "category": "conditions"
+    },
+    {
+      "id": "code_warrior",
+      "name": "Guerrier du Code",
+      "description": "Compléter 5 exercices",
+      "icon": "⚔️",
+      "condition": "complete_exercises_count",
+      "count": 5
+    },
+    {
+      "id": "perfect_score",
+      "name": "Score Parfait",
+      "description": "Obtenir 100% à tous les quiz",
+      "icon": "🏆",
+      "condition": "all_quiz_perfect"
+    },
+    {
+      "id": "fast_learner",
+      "name": "Apprenant Rapide",
+      "description": "Compléter un exercice en moins de 5 minutes",
+      "icon": "⚡",
+      "condition": "exercise_time",
+      "time": 300
+    },
+    {
+      "id": "helpful",
+      "name": "Aidant",
+      "description": "Utiliser les indices moins de 2 fois par exercice",
+      "icon": "🤝",
+      "condition": "hints_usage",
+      "max_hints": 2
+    },
+    {
+      "id": "persistent",
+      "name": "Persévérant",
+      "description": "Réessayer un exercice plus de 3 fois",
+      "icon": "💪",
+      "condition": "retry_count",
+      "min_retries": 3
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "name": "Novice",
+      "required_points": 0,
+      "badge": "🌟"
+    },
+    {
+      "level": 2,
+      "name": "Apprenti",
+      "required_points": 100,
+      "badge": "📚"
+    },
+    {
+      "level": 3,
+      "name": "Développeur",
+      "required_points": 300,
+      "badge": "💻"
+    },
+    {
+      "level": 4,
+      "name": "Expert",
+      "required_points": 600,
+      "badge": "🎯"
+    },
+    {
+      "level": 5,
+      "name": "Maître",
+      "required_points": 1000,
+      "badge": "👑"
+    }
+  ],
+  "points": {
+    "complete_exercise": 50,
+    "quiz_perfect_score": 100,
+    "quiz_good_score": 50,
+    "use_hint": -5,
+    "retry_exercise": 10
+  }
+} 
